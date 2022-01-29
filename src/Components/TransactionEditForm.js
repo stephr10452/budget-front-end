@@ -57,13 +57,13 @@ function TransactionEditForm() {
           </div>
           </div>
           <div class="form-group row">
-          <label htmlFor="name" class="col-sm-2 col-form-label">Name:</label>
+          <label htmlFor="from" class="col-sm-2 col-form-label">Name:</label>
           <div class="col-sm-10">
           <input
-            id="name"
+            id="from"
             type="text"
             class="form-control"
-            value={transaction.name}
+            value={transaction.from}
             placeholder="Specific location"
             onChange={handleTextChange}
           />
@@ -84,15 +84,15 @@ function TransactionEditForm() {
           </div>
           </div>
           <div class="form-group row">
-          <label htmlFor="detail" class="col-sm-2 col-form-label">Transaction Detail:</label>
+          <label htmlFor="name" class="col-sm-2 col-form-label">Transaction Detail:</label>
           <div class="col-sm-10">
           <input
-            id="detail"
+            id="name"
             type="text"
             class="form-control"
-            name="detail"
+            name="name"
             placeholder='Transaction Detail'
-            value={transaction.from}
+            value={transaction.name}
             onChange={handleTextChange}
             required
             

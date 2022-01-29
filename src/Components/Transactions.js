@@ -28,7 +28,7 @@ function Transactions() {
     // console.log(transactionAmount)
 
     const highlight = () => {
-        if (totalAmount > 1000){
+        if (totalAmount < 1000){
             return <div className="text-danger">Bank Acount Total:{totalAmount.toFixed(2)}</div>
         }else if (totalAmount > 0){
             return <div className="text-success">Bank Acount Total:{totalAmount.toFixed(2)}</div>
